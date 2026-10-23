@@ -1,0 +1,2109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+
+    <link rel="icon" type="image/x-icon" href="material/logo.png">
+
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="collections-page">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg luxury-navbar ">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="material/logo.png" alt="Alberto Clocks logo" width="80" height="40"
+                    class="brand-logo">
+                <span>Alberto Clock's</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="index.html#gall">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="index.html#abot">About us</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="index.html#contat">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">collections</a></li>
+
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="cart-btn btn" onclick="showCartItems()">
+                        <span>🛒 Cart</span>
+                        <span class="badge bg-warning text-dark" id="cartCount">0</span>
+                    </button>
+                    <form class="d-flex navbar-search" role="search" onsubmit="event.preventDefault();">
+                        <input class="form-control me-2" type="search" id="watchSearchInput"
+                            placeholder="Search watches..." aria-label="Search" onkeyup="filterWatches()">
+                    </form>
+
+                    <div id="searchSuggestions"></div>
+                    <!-- <div class="visitor-counter" aria-live="polite" title="Visit count saved in this browser">
+          <span aria-hidden="true">👤</span> Visitors: <strong id="visitorCount">0</strong>
+        </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-title">
+        <h6>THE ART OF PRECISION</h6>
+        <h1>Make Every Second <span>Iconic.</span></h1>
+        <p>Discover watches that make every moment unforgettable.</p>
+    </div>
+
+    <!-- Main Products Grid -->
+    <div class="container pb-5">
+        <div class="row g-4 justify-content-center">
+
+            <!-- Rolex -->
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-submariner.jpg" class="card-img-top" alt="Rolex Submariner">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rolex Submariner</h5>
+                        <p class="card-text text-muted small">Sophisticated craftsmanship designed for timeless
+                            elegance.</p>
+                        <div class="product-price mb-2">$250</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-daytona.jpg" class="card-img-top" alt="Rolex Daytona">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rolex Daytona</h5>
+                        <p class="card-text text-muted small">A harmonious blend of modern luxury and vintage charm.</p>
+                        <div class="product-price mb-2">$320</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-datejust.jpg" class="card-img-top" alt="Rolex Datejust">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rolex Datejust</h5>
+                        <p class="card-text text-muted small">Refined details tailored for the distinguished collector.
+                        </p>
+                        <div class="product-price mb-2">$450</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-gmt-master-ii.jpg" class="card-img-top" alt="Rolex GMT-Master II">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rolex GMT-Master II</h5>
+                        <p class="card-text text-muted small">Exceptional quality that speaks volumes of prestige.</p>
+                        <div class="product-price mb-2"> $550</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex4">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-oyster-perpetual.jpg" class="card-img-top" alt="Rolex Oyster Perpetual">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Rolex Oyster Perpetual</h5>
+                        <p class="card-text text-muted small">An iconic statement piece crafted with absolute precision.
+                        </p>
+                        <div class="product-price mb-2">$390</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex5">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-sky-dweller.jpg" class="card-img-top" alt="Rolex Sky-Dweller">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rolex Sky-Dweller </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$290</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex6">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-milgauss.jpg" class="card-img-top" alt="Rolex Milgauss">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Rolex Milgauss</h5>
+                        <p class="card-text text-muted small">The pinnacle of luxury design and modern sophistication.
+                        </p>
+                        <div class="product-price mb-2">$280</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex7">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/rolex-air-king.jpg" class="card-img-top" alt="Rolex Air-King">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Rolex Air-King</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$490</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#rolex8">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- omega -->
+
+            <!-- Card 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-seamaster.jpg" class="card-img-top" alt="Omega Seamaster">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega Seamaster</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$150</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-speedmaster.jpg" class="card-img-top" alt="Omega Speedmaster">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega Speedmaster </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$230</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-constellation.jpg" class="card-img-top" alt="Omega Constellation">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega Constellation</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$270</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-de-ville.jpg" class="card-img-top" alt="Omega De Ville">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega De Ville</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$450</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega4">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 13 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-aqua-terra.jpg" class="card-img-top" alt="Omega Aqua Terra">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega Aqua Terra</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$399</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega5">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 14 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-moonwatch.jpg" class="card-img-top" alt="Omega Moonwatch">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega MoonWatch </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$375</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega6">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 31 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-constellation-globemaster.jpg" class="card-img-top" alt="Omega Constellation Globemaster">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Omega Constellation Globemaster</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$399</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega7">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 32 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/omega-aqua-terra-150m.jpg" class="card-img-top" alt="Omega Aqua Terra 150M">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Omega Aqua Terra 150M</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$270</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#omega8">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- g-shock -->
+
+            <!-- Card 15 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-2100.jpg" class="card-img-top" alt="G-Shock GA-2100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GA-2100 </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$570</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 16 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-700.jpg" class="card-img-top" alt="G-Shock GA-700">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GA-700</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$420</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 17 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-100.jpg" class="card-img-top" alt="G-Shock GA-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> GA-100</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$370</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 18 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-b2100.jpg" class="card-img-top" alt="G-Shock GA-B2100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> GA-B2100</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$150</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock4">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 19 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-dw-5600.jpg" class="card-img-top" alt="G-Shock DW-5600">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> DW-5600</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$544</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock5">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 20 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-dw-6900.jpg" class="card-img-top" alt="G-Shock DW-6900">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> DW-6900</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$375</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock6">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 21 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-mudmaster-gg-1000.jpg" class="card-img-top" alt="G-Shock Mudmaster GG-1000">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mudmaster GG-1000</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$390</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock7">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 22 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-900.jpg" class="card-img-top" alt="G-Shock GA-900">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GA-900 </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$670</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock8">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 33 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/g-shock-ga-smw.jpg" class="card-img-top" alt="G-Shock GA-SMW">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GA-smw </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$875</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#g-shock9">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casio -->
+
+            <!-- Card 23 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-g-shock-ga-2100.jpg" class="card-img-top" alt="Casio G-Shock GA-2100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Casio G-Shock GA-2100 </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$150</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 24 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-f-91w.jpg" class="card-img-top" alt="Casio F-91W">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio F-91W</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$530</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 25
+          -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-a168.jpg" class="card-img-top" alt="Casio A168">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio A168</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$170</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 26 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-ae-1200.jpg" class="card-img-top" alt="Casio AE-1200">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Casio AE-1200 </h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$650</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio4">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 27 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-edifice-efv-100.jpg" class="card-img-top" alt="Casio Edifice EFV-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio Edifice EFV-100</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$244</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio5">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 28 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-mtp-1302.jpg" class="card-img-top" alt="Casio MTP-1302">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio MTP-1302</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$275</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio6">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 29 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-g-shock-dw-5600.jpg" class="card-img-top" alt="Casio G-Shock DW-5600">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio G-shock DW-5600</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$360</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio7">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 30 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-vintage-a158.jpg" class="card-img-top" alt="Casio Vintage A158">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio Vintage A158</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$470</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio8">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 34 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="material/casio-s-m-w.jpg" class="card-img-top" alt="Casio S-M-W">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"> Casio s-m-w</h5>
+                        <p class="card-text text-muted small">Unmatched brilliance reflecting a legacy of excellence.
+                        </p>
+                        <div class="product-price mb-2">$970</div>
+                        <button type="button" class="btn btn-dark-gold mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#casio9">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Modals for Each Product -->
+
+    <!-- rolex modal -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="rolex1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex submariner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-submariner.jpg" alt="Rolex Submariner">
+                    </div>
+
+                    <p class="text-muted">A refined dive watch design with a distinctive rotating bezel and a clear, easy-to-read dial.</p>
+                    <div class="product-price fs-5 mt-2">Price: $250</div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('Rolex submariner',250)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="rolex2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Daytona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-daytona.jpg" alt="Rolex Daytona">
+                    </div>
+                    <p class="text-muted">A harmonious blend of modern luxury and vintage charm. Perfect for formal and
+                        casual occasions.</p>
+                    <div class="product-price fs-5 mt-2">Price: $320</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex Daytona', 320)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="rolex3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Datejust</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-datejust.jpg" alt="Rolex Datejust">
+                    </div>
+                    <p class="text-muted">Refined details tailored for the distinguished collector. Built with
+                        exceptional durability and shine.</p>
+                    <div class="product-price fs-5 mt-2">Price: $450</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex Datejust', 450)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="rolex4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex GMT-MasterII </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-gmt-master-ii.jpg" alt="Rolex GMT-Master II">
+                    </div>
+                    <p class="text-muted">A travel-ready sports watch design with a dual-time display and a distinctive two-tone bezel.</p>
+                    <div class="product-price fs-5 mt-2">Price: $550</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex GMT-MasterII', 550)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="rolex5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Oyster Perpetual</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-oyster-perpetual.jpg" alt="Rolex Oyster Perpetual">
+                    </div>
+                    <p class="text-muted">An iconic statement piece crafted with absolute precision and unmatched
+                        aesthetic appeal.</p>
+                    <div class="product-price fs-5 mt-2">Price: $390</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex Oyster Perpetual', 390)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="rolex6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Sky-Dweller</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-sky-dweller.jpg" alt="Rolex Sky-Dweller">
+                    </div>
+                    <p class="text-muted">Unmatched brilliance reflecting a legacy of excellence. Designed for those who
+                        appreciate true luxury.</p>
+                    <div class="product-price fs-5 mt-2">Price: $290</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex Sky-Dweller', 290)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="rolex7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Milgauss</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-milgauss.jpg" alt="Rolex Milgauss">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $280</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('Rolex Milgauss', 280)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="rolex8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rolex Air-king</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/rolex-air-king.jpg" alt="Rolex Air-King">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $490</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Rolex Air-king', 490)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- omega modal -->
+
+    <!-- Modal 9 -->
+    <div class="modal fade" id="omega1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega Seamaster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-seamaster.jpg" alt="Omega Seamaster">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $150</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega Seamaster', 150)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div class="modal fade" id="omega2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega Speed Master</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-speedmaster.jpg" alt="Omega Speedmaster">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $230</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega Speed Master', 230)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div class="modal fade" id="omega3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega Constellation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-constellation.jpg" alt="Omega Constellation">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $270</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega Constellation', 270)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 12 -->
+    <div class="modal fade" id="omega4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega De Ville</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-de-ville.jpg" alt="Omega De Ville">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $450</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega De Ville', 450)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 13 -->
+    <div class="modal fade" id="omega5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega Aqua Terra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-aqua-terra.jpg" alt="Omega Aqua Terra">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $399</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega Aqua Terra', 399)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 14 -->
+    <div class="modal fade" id="omega6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega MoonWatch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-moonwatch.jpg" alt="Omega Moonwatch">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $375</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Omega MoonWatch', 375)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 31 -->
+    <div class="modal fade" id="omega7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Omega Constellation Globemaster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-constellation-globemaster.jpg" alt="Omega Constellation Globemaster">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $399</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('  Omega Constellation Globemaster', 399)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 32 -->
+    <div class="modal fade" id="omega8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Omega Aqua terra 150M</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/omega-aqua-terra-150m.jpg" alt="Omega Aqua Terra 150M">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $270</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('  Omega Aqua terra 150M', 270)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- g-shock modal -->
+
+    <!-- Modal 15 -->
+    <div class="modal fade" id="g-shock1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-2100</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-2100.jpg" alt="G-Shock GA-2100">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $570</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' GA-2100', 570)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 16 -->
+    <div class="modal fade" id="g-shock2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-700</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-700.jpg" alt="G-Shock GA-700">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $420</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' GA-700', 420)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 17 -->
+    <div class="modal fade" id="g-shock3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-100</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-100.jpg" alt="G-Shock GA-100">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $370</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' GA-100', 370)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 18 -->
+    <div class="modal fade" id="g-shock4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-B2100</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-b2100.jpg" alt="G-Shock GA-B2100">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $150</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' GA-B2100', 150)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 19 -->
+    <div class="modal fade" id="g-shock5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DW-5600</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-dw-5600.jpg" alt="G-Shock DW-5600">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $544</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' DW-5600', 544)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 20 -->
+    <div class="modal fade" id="g-shock6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DW-6900</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-dw-6900.jpg" alt="G-Shock DW-6900">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $375</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' DW-6900', 375)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 21 -->
+    <div class="modal fade" id="g-shock7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MudMaster GG-1000</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-mudmaster-gg-1000.jpg" alt="G-Shock Mudmaster GG-1000">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $390</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' MudMaster GG-1000', 390)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 22 -->
+    <div class="modal fade" id="g-shock8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-900</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-900.jpg" alt="G-Shock GA-900">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $670</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' GA-900', 670)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 33 -->
+    <div class="modal fade" id="g-shock9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GA-smw</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/g-shock-ga-smw.jpg" alt="G-Shock GA-SMW">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $875</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('GA-smw', 875)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- casio modal -->
+
+    <!-- Modal 23 -->
+    <div class="modal fade" id="casio1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio G-Shock GA-2100</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-g-shock-ga-2100.jpg" alt="Casio G-Shock GA-2100">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $150</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio G-Shock GA-2100', 150)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 24 -->
+    <div class="modal fade" id="casio2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio F-91W</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-f-91w.jpg" alt="Casio F-91W">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $530</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio F-91W', 530)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 25 -->
+    <div class="modal fade" id="casio3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio A168</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-a168.jpg" alt="Casio A168">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $170</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio A168', 170)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 26 -->
+    <div class="modal fade" id="casio4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio AE-1200</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-ae-1200.jpg" alt="Casio AE-1200">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $650</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('Casio AE-1200 ',  650)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 27 -->
+    <div class="modal fade" id="casio5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio Edifice EFV-100</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-edifice-efv-100.jpg" alt="Casio Edifice EFV-100">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $244</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio Edifice EFV-100', 244)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 28 -->
+    <div class="modal fade" id="casio6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio MTP-1302</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-mtp-1302.jpg" alt="Casio MTP-1302">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $275</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio MTP-1302',275)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 29 -->
+    <div class="modal fade" id="casio7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio G-Shock DW-5600</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-g-shock-dw-5600.jpg" alt="Casio G-Shock DW-5600">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $360</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart(' Casio G-Shock DW-5600', 360)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 30 -->
+    <div class="modal fade" id="casio8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio Vintage A158</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-vintage-a158.jpg" alt="Casio Vintage A158">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $470</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('Casio Vintage A158', 470)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 34 -->
+    <div class="modal fade" id="casio9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casio s-m-w</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img src="material/casio-s-m-w.jpg" alt="Casio S-M-W">
+                    </div>
+                    <p class="text-muted">The pinnacle of luxury design and modern sophistication. A must-have
+                        centerpiece for your collection.</p>
+                    <div class="product-price fs-5 mt-2">Price: $970</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark-gold btn-sm" data-bs-dismiss="modal"
+                        onclick="addToCart('Casio  s-m-w', 970)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Modal Container for Cart & Checkout -->
+    <div id="dynamicModalContainer"></div>
+
+
+    <!-- footer -->
+
+
+    <!-- ALBERTO CLOCKS FOOTER -->
+    <footer class="alberto-footer">
+
+        <!-- MAIN FOOTER CONTENT -->
+        <div class="footer-content">
+
+            <!-- LEFT SECTION -->
+            <div class="footer-news">
+                <div class="visitor-counter" aria-live="polite" title="Visit count saved in this browser">
+                    <span aria-hidden="true">👤</span> Visitors: <strong id="visitorCount">0</strong>
+                </div>
+                <br>
+                <!-- <span class="footer-line"></span> -->
+
+
+                <h2>
+                    Stay Connected<br>
+                    <span>With Us</span>
+                </h2>
+
+                <p>
+                    Discover timeless watches, new arrivals
+                    and exclusive collections. Stay connected
+                    with Alberto Clocks and never miss a moment
+                    of luxury.
+                </p>
+
+
+            </div>
+
+            <!-- TERMS AND CONDITIONS -->
+            <div class="footer-column">
+                <span class="footer-line"></span>
+
+                <h3>Terms and Conditions</h3>
+
+                <a href="#">Free returns!</a>
+                <a href="#">30 days return policy!</a>
+                <a href="#">Quality watches!</a>
+
+                <div class="footer-follow">
+                    <strong>Follow Us On</strong>
+<a href="https://web.facebook.com/?_rdc=1&_rdr#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/en/" aria-label="fa-tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://x.com/" aria-label="fa-x-twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                </div>
+            </div>
+
+            <!-- INFORMATION -->
+            <div class="footer-column">
+                <span class="footer-line"></span>
+
+                <h3>Quick Links</h3>
+                <br>
+                <a href="index.html">Home</a><br>
+                <a href="index.html#gall">Gallery</a> <br>
+                <a href="index.html#abot">About Us</a><br>
+                <a href="index.html#contat">Contact Us</a><br>
+                <a href="collections.html">Collections</a><br>
+
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-column">
+                <span class="footer-line"></span>
+
+                <h3>Contact</h3>
+
+                <strong class="footer-purple">
+                    Alberto Clocks
+                </strong>
+
+                <p>Luxury Watches & Accessories</p>
+
+                <div class="footer-details">
+                    <strong class="footer-purple">
+                        Our Location:
+                    </strong>
+
+                    <p> Aptech Computer Education North Karachi Center</p>
+                </div>
+
+                <div class="footer-details">
+                    <strong class="footer-purple">
+                        Email:
+                    </strong>
+
+                    <a href="mailto:info@albertoclocks.com">
+                        albertclocks@gmail.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+
+            <div class="footer-trust">
+                <img src="material/logo.png" alt="Alberto Clocks Logo">
+
+                <span>
+                    ALBERTO<br>
+                    CLOCKS
+                </span>
+            </div>
+
+
+            <div class="footer-legal">
+
+                <p>
+                    Discover timeless craftsmanship with Alberto Clocks.
+                </p>
+
+                <p>
+                    Quality, elegance and style in every second.
+                </p>
+
+
+                <div class="footer-flags">
+                    <img src="material/flag-pk.png" alt="Pakistan">
+                    <img src="material/flag-se.png" alt="Sweden">
+                    <img src="material/flag-gb.png" alt="United Kingdom">
+                    <img src="material/flag-us.png" alt="USA">
+                    <img src="material/flag-fr.png" alt="France">
+                    <img src="material/flag-de.png" alt="Germany">
+                    <img src="material/flag-it.png" alt="Italy">
+                </div>
+
+
+                <p class="footer-copyright">
+                    © 2026 Alberto Clocks. All rights reserved.
+                </p>
+
+            </div>
+
+            <div class="footer-payments">
+                <i class="fa-brands fa-cc-visa visa"></i>
+                <i class="fa-brands fa-cc-mastercard mastercard"></i>
+                <i class="fa-brands fa-cc-paypal paypal"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        let cartCount = 0;
+        let cartItems = [];
+
+        function addToCart(productName, price) {
+            cartCount++;
+            cartItems.push({ name: productName, price: price });
+            document.getElementById('cartCount').textContent = cartCount;
+
+            const notification = document.createElement('div');
+            notification.className = 'position-fixed bottom-0 end-0 m-3 p-3 bg-dark text-white rounded shadow border border-warning';
+            notification.style.zIndex = '1080';
+            notification.innerHTML = ` <strong>${productName}</strong> ($${price.toLocaleString()}) added!`;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 2500);
+        }
+
+
+        function removeFromCart(index) {
+            // Array se item remove karein
+            cartItems.splice(index, 1);
+            cartCount = cartItems.length;
+
+            // Navbar par cart badge update karein
+            document.getElementById('cartCount').textContent = cartCount;
+
+            // Modal ko hide karein taaki purana modal close ho jaye
+            const cartModalEl = document.getElementById('cartModal');
+            const modalInstance = bootstrap.Modal.getInstance(cartModalEl);
+            if (modalInstance) {
+                modalInstance.hide();
+            }
+
+            // Updated items ke sath cart modal ko dobara open karein
+            setTimeout(() => {
+                showCartItems();
+            }, 200);
+        }
+
+
+        function showCartItems() {
+            const container = document.getElementById('dynamicModalContainer');
+
+            if (cartItems.length === 0) {
+                container.innerHTML = `
+          <div class="modal fade" id="cartModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">🛒 Your Shopping Bag</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                  <p class="text-muted mb-1">Your shopping bag is currently empty.</p>
+                  <small class="text-secondary">Explore our exclusive pieces and add them to your cart.</small>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark-gold btn-sm w-100" data-bs-dismiss="modal">Continue Shopping</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+            } else {
+                let totalPrice = 0;
+                let itemsHtml = cartItems.map((item, index) => {
+                    totalPrice += item.price;
+                    return `
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>◾ ${item.name}</span>
+              <div class="d-flex align-items-center gap-3">
+                <span class="badge bg-warning text-dark">$${item.price.toLocaleString()}</span>
+                <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeFromCart(${index})" title="Remove item">✕</button>
+              </div>
+            </li>
+          `;
+                }).join('');
+
+                container.innerHTML = `
+          <div class="modal fade" id="cartModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">🛒 Alberto Clocks Shopping Bag (${cartCount})</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="list-group list-group-flush mb-3 cart-items-list">
+                    ${itemsHtml}
+                  </ul>
+                  <div class="d-flex justify-content-between fw-bold px-2 fs-5 pt-2 border-top">
+                    <span>Total Amount:</span>
+                    <span class="text-success">$${totalPrice.toLocaleString()}</span>
+                  </div>
+                </div>
+                <div class="modal-footer flex-column">
+                  <button class="btn btn-dark-gold btn-sm w-100 mb-2" onclick="proceedToCheckout()">Proceed to Secure Checkout</button>
+                  <button class="btn btn-outline-secondary btn-sm w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>b
+          </div>
+        `;
+            }
+
+            const modalEl = document.getElementById('cartModal');
+            const myModal = new bootstrap.Modal(modalEl);
+            myModal.show();
+        }
+
+
+        function proceedToCheckout() {
+            if (cartItems.length === 0) {
+                alert("Your cart is empty!");
+                return;
+            }
+
+
+            sessionStorage.setItem("checkoutPending", "true");
+
+
+            window.location.href = "login.html";
+        }
+
+        // function proceedToCheckout() {
+        //     cartCount = 0;
+        //     cartItems = [];
+        //     document.getElementById('cartCount').textContent = cartCount;
+
+
+        //     const cartModalEl = document.getElementById('cartModal');
+        //     const activeModal = bootstrap.Modal.getInstance(cartModalEl);
+        //     if (activeModal) {
+        //         activeModal.hide();
+        //     }
+
+
+        //     setTimeout(() => {
+        //         const container = document.getElementById('dynamicModalContainer');
+        //         container.innerHTML = `
+        //     <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        //       <div class="modal-dialog modal-dialog-centered">
+        //         <div class="modal-content text-center">
+        //           <div class="modal-header bg-success text-white">
+        //             <h5 class="modal-title w-100">🎉 Order Confirmed</h5>
+        //           </div>
+        //           <div class="modal-body py-4">
+        //             <h4 class="text-dark mb-2 thankyou-heading">Thank You</h4>
+        //             <p class="text-muted small px-3">Your luxury order has been successfully placed with Alberto Clocks. Our concierge team will contact you shortly with secure shipping and delivery instructions.</p>
+        //           </div>
+        //           <div class="modal-footer justify-content-center">
+        //             <button class="btn btn-dark-gold btn-sm px-4" data-bs-dismiss="modal">Continue Exploring</button>
+        //           </div>
+        //         </div>
+        //       </div>
+        //     </div>
+        // `;
+
+
+        //         document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+        //         document.body.classList.remove('modal-open');
+        //         document.body.style.overflow = '';
+        //         document.body.style.paddingRight = '';
+
+
+        //         const successModalEl = document.getElementById('successModal');
+        //         const successModal = new bootstrap.Modal(successModalEl);
+        //         successModal.show();
+        //     }, 300);
+        // }
+
+        // visitor nd counter
+
+        (function () {
+            // Browser-local visit counter; a shared, all-user total needs a server/database.
+            try {
+                var visitCount = Number(localStorage.getItem("albertoClocksVisitorCount") || 0) + 1;
+                localStorage.setItem("albertoClocksVisitorCount", String(visitCount));
+                var countNode = document.getElementById("visitorCount");
+                if (countNode) countNode.textContent = visitCount.toLocaleString();
+            } catch (e) {
+                var countNodeFallback = document.getElementById("visitorCount");
+                if (countNodeFallback) countNodeFallback.textContent = "—";
+            }
+
+
+
+            var locationNodes = document.querySelectorAll("#tickerLocation, .tickerLocationRepeat");
+            if (!locationNodes.length) return;
+
+            function setLocation(text) {
+                locationNodes.forEach(function (el) { el.textContent = text; });
+            }
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var lat = position.coords.latitude.toFixed(4);
+                    var lon = position.coords.longitude.toFixed(4);
+                    setLocation("Your location: " + lat + ", " + lon);
+                }, function () {
+                    setLocation("Location unavailable — allow location access to show coordinates");
+                }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+            } else {
+                setLocation("Geolocation is not supported by this browser");
+            }
+        })();
+
+        // search
+        // LIVE WATCH SEARCH + SUGGESTIONS
+        function filterWatches() {
+            const input = document.getElementById("watchSearchInput");
+            const suggestionsBox = document.getElementById("searchSuggestions");
+
+            if (!input || !suggestionsBox) return;
+
+            const searchText = input.value.toLowerCase().trim();
+
+            // Sirf main products grid ke cards select karega
+            const productColumns = document.querySelectorAll(
+                ".container.pb-5 .row.g-4 > div"
+            );
+
+            suggestionsBox.innerHTML = "";
+
+            // Suggestions dropdown styling
+            suggestionsBox.style.position = "absolute";
+            suggestionsBox.style.background = "#fff";
+            suggestionsBox.style.width = input.offsetWidth + "px";
+            suggestionsBox.style.maxHeight = "250px";
+            suggestionsBox.style.overflowY = "auto";
+            suggestionsBox.style.zIndex = "2000";
+            suggestionsBox.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
+            suggestionsBox.style.borderRadius = "6px";
+
+            let matches = [];
+
+            productColumns.forEach(column => {
+                const title = column.querySelector(".card-title");
+                const cardText = column.querySelector(".card-text");
+                const card = column.querySelector(".card");
+
+                if (!title || !card) return;
+
+                const watchName = title.textContent.trim();
+                const searchableText = (
+                    watchName + " " + (cardText?.textContent || "")
+                ).toLowerCase();
+
+                const matched = searchableText.includes(searchText);
+
+                column.style.display = matched ? "" : "none";
+
+                if (searchText && watchName.toLowerCase().includes(searchText)) {
+                    matches.push({
+                        name: watchName,
+                        column: column
+                    });
+                }
+            });
+
+            // Matching watches ki suggestions
+            matches.slice(0, 8).forEach(item => {
+                const suggestion = document.createElement("div");
+
+                suggestion.textContent = item.name;
+                suggestion.style.padding = "10px 12px";
+                suggestion.style.cursor = "pointer";
+                suggestion.style.borderBottom = "1px solid #eee";
+
+                suggestion.addEventListener("mouseenter", function () {
+                    suggestion.style.background = "#f3f3f3";
+                });
+
+                suggestion.addEventListener("mouseleave", function () {
+                    suggestion.style.background = "#fff";
+                });
+
+                suggestion.addEventListener("click", function () {
+                    input.value = item.name;
+                    filterWatches();
+                    suggestionsBox.innerHTML = "";
+
+                    item.column.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+                });
+
+                suggestionsBox.appendChild(suggestion);
+            });
+
+            // Search clear karne par tamam watches show hongi
+            if (!searchText) {
+                productColumns.forEach(column => {
+                    column.style.display = "";
+                });
+            }
+        }
+
+        // Suggestions ko bahar click karne par band karein
+        document.addEventListener("click", function (event) {
+            const input = document.getElementById("watchSearchInput");
+            const suggestionsBox = document.getElementById("searchSuggestions");
+
+            if (
+                input &&
+                suggestionsBox &&
+                !input.contains(event.target) &&
+                !suggestionsBox.contains(event.target)
+            ) {
+                suggestionsBox.innerHTML = "";
+            }
+        });
+
+        // not working
+        document.getElementById("watchSearchInput").addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                filterWatches();
+                document.getElementById("searchSuggestions").innerHTML = "";
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+<script>
+window.addEventListener("load", function () {
+    const checkoutPending = sessionStorage.getItem("checkoutPending");
+    const loggedIn = sessionStorage.getItem("albertoLoggedIn");
+
+    if (checkoutPending === "true" && loggedIn === "true") {
+
+        // Flags ko remove karo taake popup dobara na aaye
+        sessionStorage.removeItem("checkoutPending");
+        sessionStorage.removeItem("albertoLoggedIn");
+
+        Swal.fire({
+             icon: "success",
+            title: "Thank You!",
+            html: `
+             
+                <div class="thankyou-content">
+                    <h3 class="thankyou-title">
+                        Welcome to the World of Luxury
+                    </h3>
+                    <p class="thankyou-message">
+                        Thank you for choosing Alberto Clocks.
+                        We appreciate your trust in our collection
+                        of timeless elegance.
+                    </p>
+                </div>
+            `,
+            confirmButtonText: "Continue Shopping",
+            confirmButtonColor: "#b89552",
+            background: "#ffffff",
+            color: "#222222",
+            width: "460px",
+            padding: "30px",
+            showCloseButton: true,
+            allowOutsideClick: false,
+            customClass: {
+                popup: "alberto-thankyou-popup",
+                confirmButton: "alberto-thankyou-button"
+            }
+        }).then(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+});
+</script>
+ 
+</body>
+</html>

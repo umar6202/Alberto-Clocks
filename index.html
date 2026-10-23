@@ -1,0 +1,1320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Clocks</title>
+
+    <link rel="icon" type="image/x-icon" href="material/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/css/lightbox.min.css"
+        integrity="sha512-syoVEtpqX1CXqIWO4cTmlEfUKIqzne0NisLTmR4xGZNxNCjge36r1N9hJPCHVd1vPYAlAWHWFDFenTpn8ju2BA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+
+
+    <!-- navbar -->
+    <section class="watch-hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+            poster="material/watch-collection-artwork.png" aria-label="Luxury watches background video">
+            <source src="navbar-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+
+        <nav class="navbar navbar-expand-lg luxury-navbar ">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="material/logo.png" alt="Alberto Clocks logo" width="80" height="40"
+                        class="brand-logo">
+                    <span>Alberto Clock's</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gall">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#abot">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contat ">Contact us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricelist.pdf" target="_blank" rel="noopener">Price</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="cart-btn btn" onclick="showCartItems()">
+                            <span>🛒 Cart</span>
+                            <span class="badge bg-warning text-dark" id="cartCount">0</span>
+                        </button>
+
+                        <!-- <div class="visitor-counter" aria-live="polite" title="Visit count saved in this browser">
+          <span aria-hidden="true">👤</span> Visitors: <strong id="visitorCount">0</strong>
+        </div> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main class="hero-content">
+            <h1 data-aos="fade-right">
+                THE<br>
+                <span>ART OF TIME</span>
+            </h1>
+
+            <p> Experience the beauty of fine watchmaking through iconic designs, exquisite details, and uncompromising
+                precision.</p>
+
+
+        </main>
+
+
+        <!-- 
+        <main id="home" class="container-fluid hero align-content-center">
+            <h2 class="main-a text-warn" data-aos="fade-up" data-aos-duration="3000"> THE </h3>
+            <h2 class="main-h text-warn" data-aos="fade-up" data-aos-duration="3000"> ART OF TIME</h2>
+            <p class="main-p " data-aos="fade-up" data-aos-duration="3000"> Experience the beauty of fine watchmaking through iconic designs, exquisite details, and uncompromising precision.</p>
+
+        </main> -->
+
+    </section>
+    <!-- swiper  -->
+    <section class="trending-section" id="gall">
+
+        <h4 class="section-subheading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">DISCOVER OUR
+            COLLECTION</h4>
+        <h1 class="section-heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Trending Products</h1>
+        <h6 id="rolex" data-aos="zoom-in"> Rolex </h6>
+        <hr>
+
+        <div class="swiper trending-slider" id="role">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-submariner.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-submariner.jpg" alt="Rolex Submariner">
+                    </a>
+
+                    <span class="slide-price">$250</span>
+                    <div class="slide-info">
+                        <h3> Rolex Submariner</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-daytona.jpg" data-lightbox="image-1" data-title="My caption">
+
+                        <img src="material/rolex-daytona.jpg" alt="Rolex Daytona">
+                    </a>
+                    <span class="slide-price">$320</span>
+                    <div class="slide-info">
+                        <h3>Rolex Daytona</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-datejust.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-datejust.jpg" alt="Rolex Datejust">
+                    </a>
+                    <span class="slide-price">$450</span>
+                    <div class="slide-info">
+                        <h3> Rolex Datejust</h3>
+                        <p>★★★★★ &nbsp; 5.0 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-gmt-master-ii.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-gmt-master-ii.jpg" alt="Rolex GMT-Master II">
+                    </a>
+                    <span class="slide-price">$550</span>
+                    <div class="slide-info">
+                        <h3> Rolex GMT-Master II</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-oyster-perpetual.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-oyster-perpetual.jpg" alt="Rolex Oyster Perpetual">
+                    </a>
+                    <span class="slide-price">$390</span>
+                    <div class="slide-info">
+                        <h3> Rolex Oyster Perpetual</h3>
+                        <p>★★★★★ &nbsp; 4.7 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-sky-dweller.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-sky-dweller.jpg" alt="Rolex Sky-Dweller">
+                    </a>
+                    <span class="slide-price">$290</span>
+                    <div class="slide-info">
+                        <h3> Rolex Sky-Dweller</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-milgauss.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-milgauss.jpg" alt="Rolex Milgauss">
+                    </a>
+                    <span class="slide-price">$280</span>
+                    <div class="slide-info">
+                        <h3> Rolex Milgauss</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <a href="material/rolex-air-king.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/rolex-air-king.jpg" alt="Rolex Air-King">
+                    </a>
+                    <span class="slide-price">$490</span>
+                    <div class="slide-info">
+                        <h3> Rolex Air-King</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Arrows and Dots -->
+        <div class="trending-slider-control">
+            <button class="slider-arrow swiper-button-prev-custom" aria-label="Previous slide">&#8592;</button>
+
+            <div class="swiper-pagination"></div>
+
+            <button class="slider-arrow swiper-button-next-custom" aria-label="Next slide">&#8594;</button>
+        </div>
+
+        <br>
+        <br>
+
+
+        <h6 id="omega" data-aos="zoom-in"> Omega </h6>
+        <hr>
+
+        <div class="swiper trending-slider" id="ome">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-seamaster.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-seamaster.jpg" alt="Omega Seamaster">
+                    </a>
+                    <span class="slide-price">$150</span>
+                    <div class="slide-info">
+                        <h3> Omega Seamaster</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-speedmaster.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-speedmaster.jpg" alt="Omega Speedmaster">
+                    </a>
+                    <span class="slide-price">$230</span>
+                    <div class="slide-info">
+                        <h3> Omega Speedmaster</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-constellation.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-constellation.jpg" alt="Omega Constellation">
+                    </a>
+                    <span class="slide-price">$270</span>
+                    <div class="slide-info">
+                        <h3> Omega Constellation</h3>
+                        <p>★★★★★ &nbsp; 5.0 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-de-ville.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-de-ville.jpg" alt="Omega De Ville">
+                    </a>
+                    <span class="slide-price">$450</span>
+                    <div class="slide-info">
+                        <h3> Omega De Ville</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-aqua-terra.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-aqua-terra.jpg" alt="Omega Aqua Terra">\
+                    </a>
+                    <span class="slide-price">$399</span>
+                    <div class="slide-info">
+                        <h3> Omega Aqua Terra</h3>
+                        <p>★★★★★ &nbsp; 4.7 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-moonwatch.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-moonwatch.jpg" alt="Omega Moonwatch">
+                    </a>
+                    <span class="slide-price">$375</span>
+                    <div class="slide-info">
+                        <h3> Omega Moonwatch</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-constellation-globemaster.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-constellation-globemaster.jpg" alt="Omega Constellation Globemaster">
+                    </a>
+                    <span class="slide-price">$399</span>
+                    <div class="slide-info">
+                        <h3> Omega Constellation GlobeMaster</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <a href="material/omega-aqua-terra-150m.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/omega-aqua-terra-150m.jpg" alt="Omega Aqua Terra 150M">
+                    </a>
+                    <span class="slide-price">$270</span>
+                    <div class="slide-info">
+                        <h3> Omega Aqua Terra 150M</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Arrows and Dots -->
+        <div class="trending-slider-control">
+            <button class="slider-arrow swiper-button-prev-custom" aria-label="Previous slide">&#8592;</button>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <button class="slider-arrow swiper-button-next-custom" aria-label="Next slide">&#8594;</button>
+        </div>
+
+        <h6 id="casio" data-aos="zoom-in"> Casio </h6>
+        <hr>
+
+        <div class="swiper trending-slider">
+
+            <div class="swiper-wrapper" id="cas">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-g-shock-ga-2100.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-g-shock-ga-2100.jpg" alt="Casio G-Shock GA-2100">
+                    </a>
+                    <span class="slide-price">$150</span>
+                    <div class="slide-info">
+                        <h3>Casio G-Shock GA-2100 </h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-f-91w.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-f-91w.jpg" alt="Casio F-91W">
+                    </a>
+                    <span class="slide-price">$530</span>
+                    <div class="slide-info">
+                        <h3> Casio F-91W</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-a168.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-a168.jpg" alt="Casio A168">
+                    </a>
+                    <span class="slide-price">$170</span>
+                    <div class="slide-info">
+                        <h3>Casio A168</h3>
+                        <p>★★★★★ &nbsp; 5.0 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-ae-1200.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-ae-1200.jpg" alt="Casio AE-1200">
+                    </a>
+                    <span class="slide-price">$650</span>
+                    <div class="slide-info">
+                        <h3>Casio AE-1200</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-edifice-efv-100.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-edifice-efv-100.jpg" alt="Casio Edifice EFV-100">
+                    </a>
+                    <span class="slide-price">$244</span>
+                    <div class="slide-info">
+                        <h3> Casio Edifice EFV-100</h3>
+                        <p>★★★★★ &nbsp; 4.7 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-mtp-1302.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-mtp-1302.jpg" alt="Casio MTP-1302">
+                    </a>
+                    <span class="slide-price">$275</span>
+                    <div class="slide-info">
+                        <h3> Casio MTP-1302</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-g-shock-dw-5600.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-g-shock-dw-5600.jpg" alt="Casio G-Shock DW-5600">
+                    </a>
+                    <span class="slide-price">$360</span>
+                    <div class="slide-info">
+                        <h3> Casio G-Shock DW-5600</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-vintage-a158.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-vintage-a158.jpg" alt="Casio Vintage A158">
+                    </a>
+                    <span class="slide-price">$470</span>
+                    <div class="slide-info">
+                        <h3> Casio Vintage A158</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide">
+                    <a href="material/casio-s-m-w.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/casio-s-m-w.jpg" alt="Casio S-M-W">
+                    </a>
+                    <span class="slide-price">$970</span>
+                    <div class="slide-info">
+                        <h3> Casio s-m-w</h3>
+                        <p>★★★★★ &nbsp; 4.6 Rating</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Arrows and Dots -->
+        <div class="trending-slider-control">
+            <button class="slider-arrow swiper-button-prev-custom" aria-label="Previous slide">&#8592;</button>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <button class="slider-arrow swiper-button-next-custom" aria-label="Next slide">&#8594;</button>
+        </div>
+
+        <h6 id="g-shock" data-aos="zoom-in"> G-shock </h6>
+        <hr>
+
+        <div class="swiper trending-slider" id="sho">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-2100.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-2100.jpg" alt="G-Shock GA-2100">
+                    </a>
+                    <span class="slide-price">$570</span>
+                    <div class="slide-info">
+                        <h3> GA-2100 </h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-700.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-700.jpg" alt="G-Shock GA-700">
+                    </a>
+                    <span class="slide-price">$420</span>
+                    <div class="slide-info">
+                        <h3> GA-700</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-100.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-100.jpg" alt="G-Shock GA-100">
+                    </a>
+                    <span class="slide-price">$370</span>
+                    <div class="slide-info">
+                        <h3> GA-100</h3>
+                        <p>★★★★★ &nbsp; 5.0 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-b2100.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-b2100.jpg" alt="G-Shock GA-B2100">
+                    </a>
+                    <span class="slide-price">$150</span>
+                    <div class="slide-info">
+                        <h3> GA-B2100</h3>
+                        <p>★★★★★ &nbsp; 4.9 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-dw-5600.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-dw-5600.jpg" alt="G-Shock DW-5600">
+                    </a>
+                    <span class="slide-price">$544</span>
+                    <div class="slide-info">
+                        <h3> DW-5600</h3>
+                        <p>★★★★★ &nbsp; 4.7 Rating</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-dw-6900.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-dw-6900.jpg" alt="G-Shock DW-6900">
+                    </a>
+                    <span class="slide-price">$375</span>
+                    <div class="slide-info">
+                        <h3> DW-6900</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-mudmaster-gg-1000.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-mudmaster-gg-1000.jpg" alt="G-Shock Mudmaster GG-1000">
+                    </a>
+                    <span class="slide-price">$390</span>
+                    <div class="slide-info">
+                        <h3>Mudmaster GG-1000 </h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-900.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-900.jpg" alt="G-Shock GA-900">
+                    </a>
+                    <span class="slide-price">$670</span>
+                    <div class="slide-info">
+                        <h3> GA-900</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide">
+                    <a href="material/g-shock-ga-smw.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="material/g-shock-ga-smw.jpg" alt="G-Shock GA-SMW">
+                    </a>
+                    <span class="slide-price">$875</span>
+                    <div class="slide-info">
+                        <h3> GA-smw</h3>
+                        <p>★★★★★ &nbsp; 4.8 Rating</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Arrows and Dots -->
+        <div class="trending-slider-control">
+            <button class="slider-arrow swiper-button-prev-custom" aria-label="Previous slide">&#8592;</button>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <button class="slider-arrow swiper-button-next-custom" aria-label="Next slide">&#8594;</button>
+        </div>
+
+
+    </section>
+
+
+    <!-- aboutus -->
+
+    <section class="aboutus-h" id="abot">
+        <h1 data-aos="fade-up" data-aos-duration="3000">LUXURY HOROLOGY & HERITAGE</h1>
+        <p data-aos="fade-up" data-aos-duration="3000">Your trusted destination for certified, 100% authentic Rolex &
+            Omega timepieces.</p>
+    </section>
+
+
+    <div class="container about-content">
+
+        <!-- Rolex & Omega Highlight -->
+        <div class="brands-grid">
+            <div class="brand-card rolex">
+
+                <!-- <h3 data-aos="zoom-in">ROLEX</h3> -->
+                <p>Iconic prestige, timeless value, and legendary precision. Featuring Submariner, Datejust, Day-Date,
+                    and
+                    Daytona models.</p>
+            </div>
+            <div class="brand-card omega">
+                <!-- <h3 data-aos="zoom-in">Casio</h3> -->
+                <p>Master Chronometer certification, deep-sea exploration, and space heritage. Featuring Speedmaster,
+                    Seamaster,
+                    and Constellation.</p>
+            </div>
+
+
+
+        </div>
+
+        <!-- About Our Store -->
+        <div class="story-box">
+            <img src="material/rolex-omega-display.jpg" alt="Luxury Watches" class="story-img">
+            <div class="story-text">
+                <h3 data-aos="fade-left">AUTHENTICITY & TRUST</h3>
+                <p>We specialize in curating verified original timepieces from the world's most prestigious Swiss
+                    manufactures—specifically <strong>Rolex</strong> and <strong>Omega</strong>.</p>
+                <p>Every watch in our inventory undergoes a rigorous 15-point inspection by certified watchmakers to
+                    guarantee
+                    movement accuracy, serial matching, and flawless physical condition before reaching your wrist.</p>
+            </div>
+        </div>
+
+        <main>
+            <section class="section">
+                <div class="section-inner story-grid">
+
+                    <div class="story-copy">
+                        <div class="eyebrow">Our Story</div>
+                        <h2 data-aos="fade-right">Time Is More Than a Number</h2>
+                        <p>At <strong>Alberto Clocks</strong>, we believe a watch is more than an accessory. It can mark
+                            a
+                            milestone,
+                            express personal style, and become part of a story that lasts for years.</p>
+                        <p>Our collection brings together a variety of watch styles, from refined classics to sporty
+                            everyday
+                            designs.
+                            We aim to make exploring watches enjoyable by offering clear information, helpful service,
+                            and a
+                            customer-first experience.</p>
+                        <p>Whether you prefer an elegant dress watch or a durable timepiece for everyday adventures, we
+                            are here to
+                            help you choose with confidence.</p>
+                        <div class="brand-strip"><span class="brand-pill">ROLEX</span><span
+                                class="brand-pill">OMEGA</span><span class="brand-pill">CASIO</span><span
+                                class="brand-pill">G-SHOCK</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section values">
+                <div class="section-inner">
+                    <h2 class="section-title" data-aos="zoom-in">What We Stand For</h2>
+                    <p class="section-intro">The principles behind our store and the experience we want every customer
+                        to have.
+                    </p>
+                    <div class="value-grid">
+                        <article class="value-card">
+                            <div class="value-icon">◈</div>
+                            <h3>Quality & Care</h3>
+                            <p>We focus on watch design, useful details, and careful presentation so you can explore
+                                each timepiece
+                                more
+                                easily.</p>
+                        </article>
+                        <article class="value-card">
+                            <div class="value-icon">✦</div>
+                            <h3>Personal Style</h3>
+                            <p>From understated classics to bold sports watches, we celebrate the different ways a watch
+                                can express
+                                who
+                                you are.</p>
+                        </article>
+                        <article class="value-card">
+                            <div class="value-icon">♡</div>
+                            <h3>Customer First</h3>
+                            <p>We aim to make your shopping experience straightforward, welcoming, and supported by
+                                helpful
+                                information.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+              <!-- FAQ section: copy this whole section into your main website where you want FAQs to appear. -->
+ <div class="faq_body">
+
+     <section class="faq-section" id="faqs" aria-labelledby="faq-title">
+         <div class="faq-wrap">
+             <div class="text-center">
+        <div class="faq-eyebrow">Alberto Watch Company</div>
+        <h1 class="faq-heading" id="faq-title">Frequently Asked Questions</h1>
+        <hr class="faq-rule">
+        <p class="faq-intro">
+          Find quick answers about our watch collections, product information,
+          store services, and how to get in touch with our team.
+        </p>
+      </div>
+
+      <div class="accordion faq-accordion" id="albertoFaqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-1" aria-expanded="true" aria-controls="faq-answer-1">
+              <span class="faq-number">01</span>
+              What can I explore on the Alberto Watch Company website?
+            </button>
+          </h2>
+          <div id="faq-answer-1" class="accordion-collapse collapse show"
+            aria-labelledby="faq-heading-1" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              You can explore watch collections, featured brands, product information, and the
+              website's About, Gallery, Price, and Contact sections.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-2" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-number">02</span>
+              Which watch brands are featured?
+            </button>
+        </h2>
+        <div id="faq-answer-2" class="accordion-collapse collapse"
+        aria-labelledby="faq-heading-2" data-bs-parent="#albertoFaqAccordion">
+        <div class="accordion-body">
+            The website highlights Rolex, Omega, Casio, and G-Shock. Available models and
+            product information depend on the details shown in each collection.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-3" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-number">03</span>
+              How can I learn more about a particular watch?
+            </button>
+          </h2>
+          <div id="faq-answer-3" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-3" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              Open the relevant collection or product section and review the information provided
+              for that watch. If you need more details, contact the store using the Contact section.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-4" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-number">04</span>
+              Can I purchase a watch directly through the website?
+            </button>
+          </h2>
+          <div id="faq-answer-4" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-4" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              Please check the product page for the actions available on your version of the site.
+              If online checkout is not provided, contact the store to ask about a specific model.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-heading-5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-5" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-number">05</span>
+              Does the website account or login feature verify real customer accounts?
+            </button>
+          </h2>
+          <div id="faq-answer-5" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-5" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              If a login form is included in your version, it may be a demonstration interface.
+              Unless it is connected to a real authentication service, it does not create or verify
+              customer accounts.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-6" aria-expanded="false" aria-controls="faq-answer-6">
+              <span class="faq-number">06</span>
+              Does Alberto offer watch repair or appraisal services?
+            </button>
+          </h2>
+          <div id="faq-answer-6" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-6" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              Alberto Watch Company is described as offering watch repair and appraisal services.
+              Contact the store directly to confirm service availability, requirements, and pricing
+              for your particular watch.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-7" aria-expanded="false" aria-controls="faq-answer-7">
+              <span class="faq-number">07</span>
+              What are the store's opening hours?
+            </button>
+          </h2>
+          <div id="faq-answer-7" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-7" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              The website lists store hours as Monday to Saturday, 11:00 AM to 9:00 PM.
+              Please contact the store to confirm the latest hours before visiting.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq-answer-8" aria-expanded="false" aria-controls="faq-answer-8">
+            <span class="faq-number">08</span>
+              Where is the store located?
+            </button>
+          </h2>
+          <div id="faq-answer-8" class="accordion-collapse collapse"
+            aria-labelledby="faq-heading-8" data-bs-parent="#albertoFaqAccordion">
+            <div class="accordion-body">
+              The website lists the location as Aptech Computer Education, North Karachi Center.
+              Check the Contact section for the contact details shown on your current website.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq-heading-9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq-answer-9" aria-expanded="false" aria-controls="faq-answer-9">
+              <span class="faq-number">09</span>
+              How can I contact Alberto Watch Company?
+            </button>
+        </h2>
+        <div id="faq-answer-9" class="accordion-collapse collapse"
+        aria-labelledby="faq-heading-9" data-bs-parent="#albertoFaqAccordion">
+        <div class="accordion-body">
+            Visit the Contact section of your website for the listed phone number, email address,
+            and other contact information. Contact the store for questions about a specific watch
+            or service.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-contact">
+        <h2>Still have a question?</h2>
+        <p>Our team can help you find the information you need.</p>
+        <p class="faq-contact-note">Use the Contact section on your main website to get in touch.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+        </main>
+
+        <br>
+        <br>
+
+
+        <hr>
+
+        <!-- contactus -->
+
+        <main class="contact-section" id="contat">
+            <h1 class="section-heading">Get in Touch</h1>
+            <p class="section-intro">
+                Have questions about a timepiece or want to place an order?
+                Contact our specialists. We will be happy to help you find the perfect watch.
+            </p>
+            <hr class="gold-line">
+
+            <section class="contact-wrapper" aria-label="Contact information and inquiry form">
+                <div class="contact-info">
+
+                    <h2 class="card-heading">Contact Information</h2>
+                    <div class="info-item">
+
+                        <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-map-pin"></i></span>
+                        <div>
+                            <h4 data-aos="fade-right">Showroom Location</h4>
+                            <p>Aptech Computer Education, North Karachi Center</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <h4 data-aos="fade-right">Direct Email</h4>
+                            <p><a href="mailto:albertclocks@gmail.com">hasnainaptech85@gmail.com</a></p>
+                            <p><a href="mailto:albertoclocks@gmail.com">hasnainaptech8989@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <h4 data-aos="fade-right">Call / WhatsApp</h4>
+                            <p><a href="tel:+923001234567">+92 3712238989</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
+                        <div>
+                            <h4 data-aos="fade-right">Operating Hours</h4>
+                            <p>Monday – Saturday</p>
+                            <p>11:00 AM – 09:00 PM</p>
+                        </div>
+                    </div>
+
+
+                    <div class="alberto-mini">
+                        <span>ALBERTO WATCHES</span>
+
+                        <h2>Elegance Beyond <strong>Time.</strong></h2>
+
+                        <p>
+                            Discover timeless elegance, refined craftsmanship,
+                            and exceptional style — designed for every moment
+                            that matters.
+                        </p>
+
+                        <a href="#collections">Explore Our Collection →</a>
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+                    <h2 class="card-heading">Send an Inquiry</h2>
+                    <form action="mailto:albertclocks@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name" data-aos="fade-left"> Your Name</label>
+                            <input id="name" type="text" name="Name" placeholder=" Enter your full name"
+                                autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-aos="fade-left">Email Address</label>
+                            <input id="email" type="email" name="Email" placeholder="name@domain.com"
+                                autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="brand" data-aos="fade-left">Interested Brand</label>
+                            <select id="brand" name="Interested_Brand">
+                                <option value="Rolex">Rolex Collection</option>
+                                <option value="Omega">Omega Collection</option>
+                                <option value="Casio">Casio Collection</option>
+                                <option value="G-Shock">G-Shock Collection</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-aos="fade-left">Your Message</label>
+                            <textarea id="message" name="Message"
+                                placeholder="Mention the model name or your questions..." required></textarea>
+                        </div>
+
+                        <button class="btn-submit" type="submit">Send Email Inquiry</button>
+                        <p class="form-note">Submitting opens your default email app. For direct website submissions,
+                            connect this
+                            form to a backend or form service.</p>
+                    </form>
+                </div>
+            </section>
+
+            <section class="cta" id="collections">
+                <h2 data-aos="zoom-in">Find the Watch That Fits Your Story</h2>
+                <p>Explore our outlet and discover a timepiece that suits your everyday life, special occasions, and
+                    personal
+                    taste.</p>
+
+            </section>
+        </main>
+
+
+
+        <section class="full-width-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.751567995954!2d67.06050009678957!3d24.981958100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e1!3m2!1sen!2s!4v1792078650312!5m2!1sen!2s"
+                width="600" height="450" class="map-frame" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" width="100%" height="400" class="map-frame"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <br>
+
+        <!-- footer -->
+
+
+        <!-- ALBERTO CLOCKS FOOTER -->
+        <footer class="alberto-footer">
+
+            <!-- MAIN FOOTER CONTENT -->
+            <div class="footer-content">
+
+                <!-- LEFT SECTION -->
+                <div class="footer-news">
+                    <div class="visitor-counter" aria-live="polite" title="Visit count saved in this browser">
+                        <span aria-hidden="true">👤</span> Visitors: <strong id="visitorCount">0</strong>
+                    </div>
+                    <br>
+                    <!-- <span class="footer-line"></span> -->
+
+
+                    <h2>
+                        Stay Connected<br>
+                        <span>With Us</span>
+                    </h2>
+
+                    <p>
+                        Discover timeless watches, new arrivals
+                        and exclusive collections. Stay connected
+                        with Alberto Clocks and never miss a moment
+                        of luxury.
+                    </p>
+
+
+                </div>
+
+                <!-- TERMS AND CONDITIONS -->
+                <div class="footer-column">
+                    <span class="footer-line"></span>
+
+                    <h3>Terms and Conditions</h3>
+
+                    <a href="#">Free returns!</a>
+                    <a href="#">30 days return policy!</a>
+                    <a href="#">Quality watches!</a>
+
+                    <div class="footer-follow">
+                        <strong>Follow Us On</strong>
+
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/en/" aria-label="fa-tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://x.com/" aria-label="fa-x-twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="footer-column">
+                    <span class="footer-line"></span>
+
+                    <h3>Quick Links</h3>
+                    <br>
+                    <a href="index.html">Home</a><br>
+                    <a href="#gall">Gallery</a> <br>
+                    <a href="#abot">About Us</a><br>
+                    <a href="#contat">Contact Us</a><br>
+                    <a href="collections.html">collections</a><br>
+
+
+                </div>
+
+                <!-- CONTACT -->
+                <div class="footer-column">
+                    <span class="footer-line"></span>
+
+                    <h3>Contact</h3>
+
+                    <strong class="footer-purple">
+                        Alberto Clocks
+                    </strong>
+
+                    <p>Luxury Watches & Accessories</p>
+
+                    <div class="footer-details">
+                        <strong class="footer-purple">
+                            Our Location:
+                        </strong>
+
+                        <p> Aptech Computer Education North Karachi Center</p>
+                    </div>
+
+                    <div class="footer-details">
+                        <strong class="footer-purple">
+                            Email:
+                        </strong>
+
+                        <a href="mailto:info@albertoclocks.com">
+                            albertclocks@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+
+
+                <div class="footer-trust">
+                    <img src="material/logo.png" alt="Alberto Clocks Logo">
+
+                    <span>
+                        ALBERTO<br>
+                        CLOCKS
+                    </span>
+                </div>
+
+
+                <div class="footer-legal">
+
+                    <p>
+                        Discover timeless craftsmanship with Alberto Clocks.
+                    </p>
+
+                    <p>
+                        Quality, elegance and style in every second.
+                    </p>
+
+
+                    <div class="footer-flags">
+                        <img src="material/flag-pk.png" alt="Pakistan">
+                        <img src="material/flag-se.png" alt="Sweden">
+                        <img src="material/flag-gb.png" alt="United Kingdom">
+                        <img src="material/flag-us.png" alt="USA">
+                        <img src="material/flag-fr.png" alt="France">
+                        <img src="material/flag-de.png" alt="Germany">
+                        <img src="material/flag-it.png" alt="Italy">
+                    </div>
+
+
+                    <p class="footer-copyright">
+                        © 2026 Alberto Clocks. All rights reserved.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </footer>
+
+
+
+
+        <div class="site-ticker" role="status" aria-label="Live date, time, and location ticker">
+            <div class="site-ticker-track">
+                <span class="site-ticker-item"><i class="fa-regular fa-calendar"></i> <span id="tickerDate">Loading date…</span></span>
+                <span class="site-ticker-item"><i class="fa-solid fa-clock"></i> <span id="tickerTime">Loading time…</span></span>
+                <span class="site-ticker-item"><i class="fa-solid fa-map-pin"></i> <span id="tickerLocation">Location not shared</span></span>
+                <span class="site-ticker-item" aria-hidden="true">✦ Alberto Clocks — Timeless Luxury ✦</span>
+                <span class="site-ticker-item"><i class="fa-regular fa-calendar"></i> <span class="tickerDateRepeat">Loading date…</span></span>
+                <span class="site-ticker-item"><i class="fa-solid fa-clock"></i> <span class="tickerTimeRepeat">Loading time…</span></span>
+                <span class="site-ticker-item"><i class="fa-solid fa-map-pin"></i> <span class="tickerLocationRepeat">Location not shared</span></span>
+            </div>
+        </div>
+
+
+        <script>
+            document.querySelectorAll('.alberto-footer-year').forEach(function (el) {
+                el.textContent = new Date().getFullYear();
+            });
+        </script>
+
+
+
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+        <script>
+            document.querySelectorAll('.trending-slider').forEach((sliderElement) => {
+                const section = sliderElement.parentElement;
+                const controls = sliderElement.nextElementSibling;
+                new Swiper(sliderElement, {
+                    effect: 'coverflow', grabCursor: true, centeredSlides: true,
+                    loop: true, slidesPerView: 'auto', speed: 650,
+                    autoplay: { delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: true },
+                    coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 1.5, slideShadows: false },
+                    pagination: { el: controls?.querySelector('.swiper-pagination'), clickable: true },
+                    navigation: {
+                        nextEl: controls?.querySelector('.swiper-button-next-custom'),
+                        prevEl: controls?.querySelector('.swiper-button-prev-custom')
+                    }
+                });
+            });
+        </script>
+
+        <!-- aos animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const current = location.pathname.split("/").pop().toLowerCase();
+                document.querySelectorAll(".luxury-navbar .nav-link:not(.dropdown-toggle)").forEach(function (link) {
+                    const target = (link.getAttribute("href") || "").split("#")[0].replace(/%20/g, " ").toLowerCase();
+                    if ((current.includes("about") && target === "newabout_same_navbar.html") ||
+                        (current.includes("contact") && target === "newcontactus_same_navbar.html") ||
+                        ((!current.includes("about") && !current.includes("contact")) && target.includes("newnav_enhanced"))) {
+                        link.classList.add("active");
+                        link.setAttribute("aria-current", "page");
+                    }
+                });
+            });
+        </script>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/js/lightbox-plus-jquery.min.js"
+            integrity="sha512-Tj1sQm5hfyIf3D75HdMher+Csikwksu8VZHZqexrXhYo5m6l2W/C0P+cLqsgmUhifspT5Yq/y+4WsCCo8Dy8QA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            (function () {
+                // Browser-local visit counter; a shared, all-user total needs a server/database.
+                try {
+                    var visitCount = Number(localStorage.getItem("albertoClocksVisitorCount") || 0) + 1;
+                    localStorage.setItem("albertoClocksVisitorCount", String(visitCount));
+                    var countNode = document.getElementById("visitorCount");
+                    if (countNode) countNode.textContent = visitCount.toLocaleString();
+                } catch (e) {
+                    var countNodeFallback = document.getElementById("visitorCount");
+                    if (countNodeFallback) countNodeFallback.textContent = "—";
+                }
+
+                function updateClock() {
+                    var now = new Date();
+                    var dateText = now.toLocaleDateString(undefined, {
+                        weekday: "short", year: "numeric", month: "short", day: "numeric"
+                    });
+                    var timeText = now.toLocaleTimeString(undefined, {
+                        hour: "2-digit", minute: "2-digit", second: "2-digit"
+                    });
+                    document.getElementById("tickerDate").textContent = dateText;
+                    document.getElementById("tickerTime").textContent = timeText;
+                    document.querySelectorAll(".tickerDateRepeat").forEach(function (el) { el.textContent = dateText; });
+                    document.querySelectorAll(".tickerTimeRepeat").forEach(function (el) { el.textContent = timeText; });
+                }
+                updateClock();
+                setInterval(updateClock, 1000);
+
+                var locationNode = document.getElementById("tickerLocation");
+                function setLocation(text) {
+                    locationNode.textContent = text;
+                    document.querySelectorAll(".tickerLocationRepeat").forEach(function (el) { el.textContent = text; });
+                }
+                if ("geolocation" in navigator) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var lat = position.coords.latitude.toFixed(4);
+                        var lon = position.coords.longitude.toFixed(4);
+                        setLocation("Your location: " + lat + ", " + lon);
+                    }, function () {
+                        setLocation("Location unavailable — allow location access to show coordinates");
+                    }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+                } else {
+                    setLocation("Geolocation is not supported by this browser");
+                }
+            })();
+        </script>
+
+
+
+        <script>
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true
+            })
+        </script>
+
+</body>
+
+</html>
